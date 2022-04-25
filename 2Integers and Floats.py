@@ -28,3 +28,12 @@ print(7 % 2)
 print()
 print(3 * 2 + 1)
 print(3 * (2 + 1))
+
+print()
+num = 1
+num = num + 1
+print(num)
+num += 1
+print(num)
+num *= 2
+print(num)
