@@ -47,3 +47,10 @@ num.sort()
 print(num)
 num.sort(reverse=True)
 print(num)
+courses = ['History', 'Math', 'Physics', 'CompSci']  # List
+print(courses)
+sorted(courses)
+# didn't printed when it sorted , cause it's need a variable to store the sorted list
+print(courses)
+sorted_courses = sorted(courses)
+print(sorted_courses)
