@@ -1,4 +1,7 @@
 
+from hashlib import new
+
+
 courses = ['History', 'Math', 'Physics', 'CompSci']  # List
 
 print(courses)
@@ -59,3 +62,30 @@ print(min(num))
 print(max(num))
 print(sum(num))
 print()
+print(courses.index('CompSci'))
+# print(courses.index('Art')) ValueError: 'Art' is not in list
+print('Math' in courses)
+print('Art' in courses)
+print('CompSci' in courses)
+print()
+for item in courses:
+    print(item)
+print()
+for index, course in enumerate(courses):
+    print(index, course)
+print()
+for index, course in enumerate(courses, start=1):
+    print(index, course)
+print()
+
+course_str = ' - '.join(courses)
+print(course_str)
+new_list = course_str.split(' - ')
+print(new_list)
+
+print()
+list_1 = ['History', 'Math', 'Physics', 'CompSci']
+list_2 = list_1
+
+print(list_1)
+print(list_2)
