@@ -25,3 +25,25 @@ print(courses[0])
 courses_3 = ['Nadol', 'Lamo']
 courses.extend(courses_3)
 print(courses)
+courses.remove('Nadol')
+print(courses)
+popped = courses.pop()
+print(popped)
+print(courses)
+
+print()
+print(courses)
+courses.reverse()
+print(courses)
+courses = ['History', 'Math', 'Physics', 'CompSci']  # List
+print(courses)
+courses.sort()  # Sorting Alphabatical
+print(courses)
+print()
+
+num = [1, 5, 2, 4, 3]
+print(num)
+num.sort()
+print(num)
+num.sort(reverse=True)
+print(num)
