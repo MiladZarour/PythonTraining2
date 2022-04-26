@@ -1,7 +1,3 @@
-
-from hashlib import new
-
-
 courses = ['History', 'Math', 'Physics', 'CompSci']  # List
 
 print(courses)
@@ -115,3 +111,17 @@ print('Math' in cs_courses_1)
 cs_courses_2 = {'History', 'Math', 'Physics', 'Art'}
 print(cs_courses_1.intersection(cs_courses_2))
 print(cs_courses_1.difference(cs_courses_2))
+print(cs_courses_1.union(cs_courses_2))
+
+print()
+# Empty Lists
+empty_list = []
+empty_list = list()
+
+# Empty Tuples
+empty_tuple = ()
+empty_tuple = tuple()
+
+# Empty Sets
+empty_set = {}  # This isn't right! It's a dictionary...
+empty_set = set()
