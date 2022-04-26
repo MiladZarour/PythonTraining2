@@ -12,3 +12,16 @@ print(courses[3])
 # the first index is inclusive , but then the third index is not including it
 print(courses[0:2])
 print(courses[2:])  # from the third index until the end (SLICING)
+
+courses.append('Art')
+print(courses)
+courses.insert(0, 'Art')
+print(courses)
+courses_2 = ['Bole', 'Manufacture']
+courses.insert(0, courses_2)
+print(courses)
+print()
+print(courses[0])
+courses_3 = ['Nadol', 'Lamo']
+courses.extend(courses_3)
+print(courses)
