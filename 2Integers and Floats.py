@@ -1,4 +1,5 @@
 from traceback import print_tb
+from turtle import clear
 
 
 num = 3
@@ -37,3 +38,9 @@ num += 1
 print(num)
 num *= 2
 print(num)
+print(abs(-3))
+print(abs(-7))
+print()
+print(round(3.75))
+print(round(3.75, 1))
+print(round(3.75, 2))
