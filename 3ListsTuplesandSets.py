@@ -89,3 +89,29 @@ list_2 = list_1
 
 print(list_1)
 print(list_2)
+
+list_1[0] = 'Art'
+print(list_1)
+print(list_2)
+
+# Immutable
+tuple_1 = ('History', 'Math', 'Physics', 'CompSci')
+tuple_2 = tuple_1
+print(tuple_1)
+print(tuple_2)
+
+# tuple_1[0] = 'Art' TypeError: 'tuple' object does not support item assignment
+# print(tuple_1)
+# print(tuple_2)
+print()
+
+# Sets
+cs_courses = {'History', 'Math', 'Physics', 'CompSci'}
+print(cs_courses)  # the order will change when i compile each time
+cs_courses_1 = {'History', 'Math', 'Physics', 'CompSci', 'Math'}
+# the order will change when i compile each time, and now without the second Math
+print(cs_courses_1)
+print('Math' in cs_courses_1)
+cs_courses_2 = {'History', 'Math', 'Physics', 'Art'}
+print(cs_courses_1.intersection(cs_courses_2))
+print(cs_courses_1.difference(cs_courses_2))
