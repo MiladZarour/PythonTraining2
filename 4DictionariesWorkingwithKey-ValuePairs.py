@@ -7,3 +7,8 @@ print(student['courses'])
 print(student.get('name'))
 print(student.get('phone'))
 print(student.get('phone', 'Hej! its Not Found'))
+print()
+student['phone'] = '555-555555'
+print(student.get('phone'))
+student['name'] = 'Jane'
+print(student)
