@@ -15,3 +15,31 @@ for num in nums:
         print('Found!')
         continue
     print(num)
+print()
+
+for num in nums:
+    for letter in 'abc':
+        print(num, letter)
+print()
+
+for i in range(10):
+    print(i)
+print()
+
+for i in range(1, 11):
+    print(i)
+print()
+
+x = 0
+while x < 10:
+    if x == 5:
+        break
+    print(x)
+    x += 1
+print()
+
+while True:
+    if x == 5:
+        break
+    print(x)
+    x += 1
