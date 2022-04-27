@@ -12,3 +12,5 @@ student['phone'] = '555-555555'
 print(student.get('phone'))
 student['name'] = 'Jane'
 print(student)
+student.update({'name': 'Milad', 'age': 30, 'phone': '0762602923'})
+print(student)
