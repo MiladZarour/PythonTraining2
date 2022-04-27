@@ -140,3 +140,9 @@ if condition:
     print('Evaluated to True')
 else:
     print('Evaluared to False')
+
+condition = 'Test'
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluared to False')
