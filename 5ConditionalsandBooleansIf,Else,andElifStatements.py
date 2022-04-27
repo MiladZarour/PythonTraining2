@@ -75,3 +75,68 @@ print(a == b)
 print(id(a))
 print(id(b))
 print(a is b)  # these are two different objects in memory
+print()
+
+c = [1, 2, 3]
+d = c
+print(c == d)
+print(id(c))
+print(id(d))
+print(c is d)  # these are the same objects in memory print(id(a) == id(b))
+print(id(a) == id(b))
+print()
+
+# ******False Values:******
+# 1-- False
+# 2-- None
+# 3-- Zero of any numeric type
+# 4-- Any empty sequence. For example, '', (), [].
+# 5-- Any empty mapping. For example, {}
+
+condition = False
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluared to False')
+
+condition = None
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluared to False')
+
+condition = 0
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluared to False')
+
+condition = 10
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluared to False')
+
+condition = []
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluared to False')
+
+condition = ()
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluared to False')
+
+condition = ''
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluared to False')
+
+condition = {}
+if condition:
+    print('Evaluated to True')
+else:
+    print('Evaluared to False')
