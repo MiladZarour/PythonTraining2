@@ -8,3 +8,10 @@ for num in nums:
         print('Found!')
         break
     print(num)
+print()
+
+for num in nums:
+    if num == 3:
+        print('Found!')
+        continue
+    print(num)
