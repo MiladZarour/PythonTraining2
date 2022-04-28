@@ -42,6 +42,21 @@ for dirpath, dirnames, filenames in os.walk('C:/Users/Milad Zarour/Desktop'):
     print()
 
 print(os.environ.get('HOME'))  # C:\Users\Milad Zarour
-# file_path = os.environ.get('HOME') + 'testing.txt'
-file_path = os.path.join(os.environ.get('HOME'), 'testing2.txt')
+
+# C:\Users\Milad Zarourtesting.txt
+file_path = os.environ.get('HOME') + 'testing.txt'
 print(file_path)
+
+# C:\Users\Milad Zarour\testing2.txt
+file_path = os.path.join(os.environ.get('HOME'), 'testing2.txt')
+
+print(file_path)
+print()
+
+print(os.path.basename('\\tmp\\test.txt'))  # test.txt
+print(os.path.dirname('\\tmp\\test.txt'))  # \tmp
+print(os.path.split('\\tmp\\test.txt'))  # ('\\tmp', 'test.txt')
+print(os.path.exists('\\tmp\\test.txt'))  # False
+print(os.path.isdir('\\tmp\\fdsd'))  # False
+print(os.path.isfile('\\tmp\\fdsd'))  # False
+print(os.path.splitext('\\tmp\\text.txt'))  # ('\\tmp\\text', '.txt')
