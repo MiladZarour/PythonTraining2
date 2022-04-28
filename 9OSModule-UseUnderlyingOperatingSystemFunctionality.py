@@ -60,3 +60,6 @@ print(os.path.exists('\\tmp\\test.txt'))  # False
 print(os.path.isdir('\\tmp\\fdsd'))  # False
 print(os.path.isfile('\\tmp\\fdsd'))  # False
 print(os.path.splitext('\\tmp\\text.txt'))  # ('\\tmp\\text', '.txt')
+print()
+
+print(dir(os.path))
