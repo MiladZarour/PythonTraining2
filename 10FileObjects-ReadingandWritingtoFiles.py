@@ -39,6 +39,9 @@
 #     for line in f:
 #         print(line, end='')
 
+import chunk
+
+
 with open('10test.txt', 'r') as f:
 
     f_contents = f.read()
@@ -113,9 +116,47 @@ with open('10test2.txt', 'w') as f7:  # using the open with write mode , it will
 
 print()
 print('------f_contents8 and f8------')
-with open('10test3.txt', 'w') as f8:  # using the open with write mode , it will create the file
+with open('10test3.txt', 'w') as f8:
     # pass
     f8.write('Testttt')
     # it will overwrite the 10test3.txt file, and it's begin from the first letter
     f8.seek(0)
     f8.write('R')
+
+print()
+print('------rf and wf------')
+with open('10test.txt', 'r') as rf:
+    with open('10test_copy.txt', 'w') as wf:
+        for line in rf:
+            wf.write(line)
+
+print()
+print('------SO IMPORTANT, you can not copy image, and to use that you need to open the file in binary mode------')
+print('------This code will give you an error, do not run it------')
+''' return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 291: character maps to <undefined>'''
+# with open('10france.jpg', 'r') as rf:
+#     with open('10france_copy.jpg', 'w') as wf:
+#         for line in rf:
+#             wf.write(line)
+
+print()
+print('------SO IMPORTANT, you can not copy image, and to use that you need to open the file in binary mode------')
+print('------you can run this code...------')
+print('------you need to added b letter------')
+
+with open('10france.jpg', 'rb') as rf:
+    with open('10france_copy.jpg', 'wb') as wf:
+        for line in rf:
+            wf.write(line)
+
+print()
+print('------Chunk_size------')
+
+with open('10BBC.jpg', 'rb') as rf:
+    with open('10BBC_copy.jpg', 'wb') as wf:
+        chunk_size = 4096
+        rf_chunk = rf.read(chunk_size)
+        while len(rf_chunk) > 0:
+            wf.write(rf_chunk)
+            rf_chunk = rf.read(chunk_size)
