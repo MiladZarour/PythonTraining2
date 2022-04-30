@@ -103,3 +103,19 @@ with open('10test.txt', 'r') as f6:
 
     f_contents6 = f6.read(size_to_read)
     print(f_contents6, end='')
+
+print()
+print('------f_contents7 and f7------')
+with open('10test2.txt', 'w') as f7:  # using the open with write mode , it will create the file
+    # pass
+    f7.write('Testttt')
+    f7.write('Testttt')
+
+print()
+print('------f_contents8 and f8------')
+with open('10test3.txt', 'w') as f8:  # using the open with write mode , it will create the file
+    # pass
+    f8.write('Testttt')
+    # it will overwrite the 10test3.txt file, and it's begin from the first letter
+    f8.seek(0)
+    f8.write('R')
