@@ -50,3 +50,56 @@ with open('10test.txt', 'r') as f2:
 
     f_contents2 = f2.read(100)
     print(f_contents2, end='')
+
+print()
+with open('10test.txt', 'r') as f3:
+
+    size_to_read = 10
+    f_contents3 = f3.read(size_to_read)
+
+    while len(f_contents3) > 0:
+        print(f_contents3, end='**')
+        f_contents3 = f3.read(size_to_read)
+
+print()
+print('------f_contents4 and f4------')
+with open('10test.txt', 'r') as f4:
+
+    size_to_read = 10
+    f_contents4 = f4.read(size_to_read)
+    print(f_contents4, end='')
+    # while len(f_contents4) > 0:
+    #     print(f_contents4, end='**')
+    #     f_contents4 = f4.read(size_to_read)
+
+    print(f4.tell())
+
+print()
+print('------f_contents5 and f5------')
+with open('10test.txt', 'r') as f5:
+
+    size_to_read = 10
+    f_contents5 = f5.read(size_to_read)
+    print(f_contents5, end='')
+
+    f_contents5 = f5.read(size_to_read)
+    print(f_contents5, end='')
+
+    # while len(f_contents5) > 0:
+    #     print(f_contents5, end='**')
+    #     f_contents5 = f5.read(size_to_read)
+
+    print(f5.tell())
+
+print()
+print('------f_contents6 and f6------')
+with open('10test.txt', 'r') as f6:
+
+    size_to_read = 10
+    f_contents6 = f6.read(size_to_read)
+    print(f_contents6, end='')
+
+    f6.seek(0)
+
+    f_contents6 = f6.read(size_to_read)
+    print(f_contents6, end='')
